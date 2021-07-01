@@ -1,0 +1,65 @@
+@value makerGray from '../../common/colors.css';
+@value makerLightGray from '../../common/colors.css';
+@value makerLightWhite from '../../common/colors.css';
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: solid 1px makerLightGray;
+  border-radius: 2%;
+  background-color: makerLightWhite;
+}
+
+.login {
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.divider {
+  width: 95%;
+  height: 1px;
+  background-color: makerLightGray;
+  margin: auto;
+}
+
+.loginBtns {
+  text-align: center;
+}
+
+.loginBtn {
+  width: 95%;
+  height: 2.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  border: none;
+}
+
+.google {
+  background-color: rgb(240, 240, 240);
+  border: solid 1px makerLightGray;
+}
+
+.github {
+  background-color: rgb(58, 58, 58);
+  color: white;
+}

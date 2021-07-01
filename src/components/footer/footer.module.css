@@ -1,0 +1,10 @@
+@value makerBlue from '../../common/colors.css';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  font-size: 0.95em;
+  color: makerBlue;
+}

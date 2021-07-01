@@ -1,0 +1,29 @@
+@value makerGray from '../../common/colors.css';
+@value makerLightGray from '../../common/colors.css';
+@value makerBlue from '../../common/colors.css';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+  color: makerBlue;
+}
+
+img {
+  width: 5rem;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.divider {
+  width: 95%;
+  height: 1px;
+  background-color: makerLightGray;
+  margin: auto;
+}
