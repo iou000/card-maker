@@ -4,7 +4,8 @@ import Footer from '../footer/footer';
 import Header from '../header/header';
 
 
-const Login = (props) => {
+const Login = ({authService}) => {
+    
         
     return (
         <section className={styles.container}>
@@ -13,7 +14,7 @@ const Login = (props) => {
                 <h1 className={styles.message}>Login</h1>
                 <ul className={styles.loginBtns}>
                     <li>
-                        <button className={`${styles.loginBtn} ${styles.google}`}>Google로 로그인</button>
+                        <button className={`${styles.loginBtn} ${styles.google}` } onClick={() => authService.login('Google')}>Google로 로그인</button>
                     </li>
                     <li>
                         <button className={`${styles.loginBtn} ${styles.github}`}>Github로 로그인</button>

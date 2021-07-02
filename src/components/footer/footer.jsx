@@ -5,7 +5,11 @@ const Footer = (props) => {
         
 
     return (
-        <footer className={styles.footer}>Make your business card</footer>
+        <footer className={styles.footer}>
+            <p className={styles.title}>
+                Make your business card
+            </p>
+        </footer>
     );
 };
 
