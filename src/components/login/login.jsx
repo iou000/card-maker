@@ -16,13 +16,13 @@ const Login = ({authService}) => {
 
     const onLogin = (platform) => {
         authService.login(platform).then(data => goToMaker(data.user.uid))
-    }
+    };
 
     useEffect(() => {
         authService.onAuthChange(user => {
             user && goToMaker(user.uid);
         })
-    })
+    },[]);
     
         
     return (

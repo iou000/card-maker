@@ -14,6 +14,10 @@ class AuthService {
         });
     }
 
+    logout() {
+        firebase.auth().signOut();
+    }
+
 }
 
 export default AuthService;
