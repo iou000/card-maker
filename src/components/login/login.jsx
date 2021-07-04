@@ -14,10 +14,10 @@ const Login = ({authService}) => {
                 <h1 className={styles.message}>Login</h1>
                 <ul className={styles.loginBtns}>
                     <li>
-                        <button className={`${styles.loginBtn} ${styles.google}` } onClick={() => authService.login('Google')}>Google로 로그인</button>
+                        <button className={`${styles.loginBtn} ${styles.google}`} onClick={() => authService.login('Google')}>Google로 로그인</button>
                     </li>
                     <li>
-                        <button className={`${styles.loginBtn} ${styles.github}`}>Github로 로그인</button>
+                        <button className={`${styles.loginBtn} ${styles.github}`} onClick={() => authService.login('Github')}>Github로 로그인</button>
                     </li>
                 </ul>
             </section>

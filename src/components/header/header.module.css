@@ -5,6 +5,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   font-size: 2em;
   color: makerBlue;
