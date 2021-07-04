@@ -19,6 +19,9 @@ const Login = ({authService}) => {
                     <li>
                         <button className={`${styles.loginBtn} ${styles.github}`} onClick={() => authService.login('Github')}>Github로 로그인</button>
                     </li>
+                    <li>
+                        <button className={`${styles.loginBtn} ${styles.facebook}`} onClick={() => authService.login('Facebook')}>Facebook으로 로그인</button>
+                    </li>
                 </ul>
             </section>
             <div className={styles.divider}></div>
