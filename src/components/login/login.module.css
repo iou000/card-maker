@@ -32,13 +32,6 @@ li {
   margin-bottom: 2.5rem;
 }
 
-.divider {
-  width: 95%;
-  height: 1px;
-  background-color: makerLightGray;
-  margin: auto;
-}
-
 .loginBtns {
   text-align: center;
 }

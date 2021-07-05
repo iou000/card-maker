@@ -42,8 +42,6 @@ const Login = ({authService}) => {
                     </li>
                 </ul>
             </section>
-            <div className={styles.divider}></div>
-            
             <Footer />
         </section>
     );
