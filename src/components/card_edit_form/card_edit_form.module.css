@@ -1,0 +1,57 @@
+@value makerBlue from '../../common/colors.css';
+@value makerWhite from '../../common/colors.css';
+@value makerBlack from '../../common/colors.css';
+
+.cardNum {
+  width: 30rem;
+  font-weight: 600;
+  color: makerBlue;
+  margin-bottom: 0.4em;
+}
+
+.editForm {
+  display: flexl;
+  width: 30rem;
+  border-top: 0.5px solid makerBlack;
+  border-left: 0.5px solid makerBlack;
+  margin-bottom: 1em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.row1,
+.row2,
+.btns {
+  display: flex;
+}
+
+.input,
+.image,
+.delBtn {
+  font-size: 0.8rem;
+  width: 100%;
+  border: 0;
+  padding: 0.5em;
+  border-bottom: 0.5px solid makerBlack;
+  border-right: 0.5px solid makerBlack;
+}
+
+.image {
+  cursor: pointer;
+}
+
+.delBtn {
+  background-color: makerBlue;
+  color: makerWhite;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 0.8rem;
+}
+
+.delBtn:hover {
+  opacity: 0.8;
+}

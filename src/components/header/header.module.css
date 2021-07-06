@@ -2,6 +2,7 @@
 @value makerLightGray from '../../common/colors.css';
 @value makerBlue from '../../common/colors.css';
 @value makerLightWhite from '../../common/colors.css';
+@value makerWhite from '../../common/colors.css';
 
 .header {
   display: flex;
@@ -20,7 +21,7 @@
   top: 0.5em;
   padding: 0.4em;
   font-size: 0.8rem;
-  color: white;
+  color: makerWhite;
   background-color: makerBlue;
   border-radius: 10%;
   border: none;
