@@ -6,6 +6,9 @@ import Header from '../header/header';
 import Preview from '../preview/preview';
 import styles from './maker.module.css';
 
+
+
+let cardNum = 4;
 const Maker = ({authService}) => {
         const history = useHistory();
 
@@ -43,6 +46,22 @@ const Maker = ({authService}) => {
     ]);
 
 
+        const onAdd = () => {
+            setCards([...cards,{
+                id: cardNum,
+                name: null,
+                company: null,
+                job: null,
+                email: null,
+                tel: null,
+                fileName: null,
+                fileURL: null,
+            }
+        ])
+        cardNum++;
+    }
+
+
 
 
 
@@ -56,7 +75,7 @@ const Maker = ({authService}) => {
             <section className={styles.maker}>
                 <Header onLogout={onLogout}/>
                     <div className={styles.container}>
-                        <Editor cards={cards}/>
+                        <Editor cards={cards} onAdd={onAdd}/>
                         <Preview cards={cards}/>
                     </div>
                 <Footer />

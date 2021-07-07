@@ -5,7 +5,9 @@ const CardEditForm = ({card}) => {
         
     const {id, name, company, job, email, tel, fileName, fileURL} = card;
 
-    const onSubmit = (e) => {};
+    const onSubmit = (e) => {
+        e.preventDefault();
+    };
 
     return (
         <>

@@ -2,7 +2,8 @@ import React from 'react';
 import CardEditForm from '../card_edit_form/card_edit_form';
 import styles from './editor.module.css';
 
-const Editor = ({cards}) => {
+const Editor = ({cards, onAdd}) => {
+        
         
 
         return (
@@ -12,6 +13,11 @@ const Editor = ({cards}) => {
                     {
                     cards.map(card => <CardEditForm key={card.id} card={card}/>)
                     }
+                    <img className={styles.addImgBtn} 
+                        src="/images/plus.png" 
+                        alt="addImgBtn" 
+                        onClick={(onAdd)}
+                    />
                 </ul>
             </section>
 
