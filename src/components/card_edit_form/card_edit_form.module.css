@@ -10,7 +10,7 @@
 }
 
 .editForm {
-  display: flexl;
+  display: flex;
   width: 30rem;
   border-top: 0.5px solid makerBlack;
   border-left: 0.5px solid makerBlack;
