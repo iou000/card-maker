@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './card_edit_form.module.css';
 
-const CardEditForm = ({card, updateCard, deleteCard}) => {
+const CardEditForm = ({FileInput ,card, updateCard, deleteCard}) => {
         
     const {id, name, company, job, email, tel, fileName, fileURL} = card;
 
@@ -9,6 +9,14 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
         e.preventDefault();
         deleteCard(card);
     };
+
+    const onFileChange = (file) => {
+        updateCard({
+            ...card,
+            fileName: file.name,
+            fileURL: file.url,
+        })
+    }
 
     const onChange = (event) => { //요소에 변화가 생겼을때 실행됨.
         updateCard({
@@ -32,7 +40,9 @@ const CardEditForm = ({card, updateCard, deleteCard}) => {
                 <input className={styles.input} type="text" name="tel" placeholder='tel' onChange={onChange}></input>
             </div>
             <div className={styles.btns}>
-                <button className={styles.image}>Image</button>
+                <div className={styles.image}>
+                <FileInput name={fileName} onFileChange={onFileChange} />
+                </div>
                 <button className={styles.delBtn} onClick={onSubmit}>DELETE</button>
             </div>
         </form>

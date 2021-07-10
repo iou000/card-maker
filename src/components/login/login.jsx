@@ -10,7 +10,7 @@ const Login = ({authService}) => {
     const goToMaker = (userId) => {
         history.push({
             pathname: "/maker",
-            state : {id : userId},
+            state : {id : userId}, //사용자의 정보를 전달해줘야 나중에 DB에 저장 할 수 있음.
         });
     }
 

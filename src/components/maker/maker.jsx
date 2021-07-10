@@ -9,7 +9,7 @@ import styles from './maker.module.css';
 
 
 let cardNum = 4;
-const Maker = ({authService}) => {
+const Maker = ({FileInput, authService}) => {
         const history = useHistory();
 
         const [cards, setCards] = useState({
@@ -90,6 +90,7 @@ const Maker = ({authService}) => {
                 <Header onLogout={onLogout}/>
                     <div className={styles.container}>
                         <Editor 
+                            FileInput={FileInput}
                             cards={cards} 
                             onAdd={onAdd} 
                             updateCard={updateCard} 

@@ -41,6 +41,7 @@
 
 .image {
   cursor: pointer;
+  padding: 0;
 }
 
 .delBtn {
