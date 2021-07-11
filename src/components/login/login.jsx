@@ -18,7 +18,7 @@ const Login = ({authService}) => {
         authService.login(platform).then(data => goToMaker(data.user.uid))
     };
 
-    useEffect(() => {
+    useEffect(() => { //로그인이 되어있다면 maker컴포넌트로 이동.
         authService.onAuthChange(user => {
             user && goToMaker(user.uid);
         })

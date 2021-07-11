@@ -31,13 +31,13 @@ const CardEditForm = ({FileInput ,card, updateCard, deleteCard}) => {
         <li className={styles.editForm}>
         <form className={styles.form}>
             <div className={styles.row1}>
-                <input className={styles.input} type="text" name="name" placeholder='name' onChange={onChange}></input>
-                <input className={styles.input} type="text" name="company" placeholder='company' onChange={onChange}></input>
-                <input className={styles.input} type="text" name="job" placeholder='job' onChange={onChange}></input>
+                <input className={styles.input} type="text" name="name" placeholder='name' onChange={onChange} value={card.name}></input>
+                <input className={styles.input} type="text" name="company" placeholder='company' onChange={onChange} value={card.company}></input>
+                <input className={styles.input} type="text" name="job" placeholder='job' onChange={onChange} value={card.job}></input>
             </div>
             <div className={styles.row2}>
-                <input className={styles.input} type="text" name="email" placeholder='email' onChange={onChange}></input>
-                <input className={styles.input} type="text" name="tel" placeholder='tel' onChange={onChange}></input>
+                <input className={styles.input} type="text" name="email" placeholder='email' onChange={onChange} value={card.email}></input>
+                <input className={styles.input} type="text" name="tel" placeholder='tel' onChange={onChange} value={card.tel}></input>
             </div>
             <div className={styles.btns}>
                 <div className={styles.image}>
