@@ -8,6 +8,7 @@
   padding: 1em 2em;
   flex-basis: 50%;
   border-right: 1px solid makerLightGray;
+  overflow-y: auto;
 }
 
 .title {
@@ -34,6 +35,16 @@
 
 .addImgBtn:hover {
   animation: grow 1.5s linear infinite;
+}
+
+/* 스크롤바*/
+.editor::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.editor::-webkit-scrollbar-thumb {
+  background-color: rgb(104, 180, 252);
+  border-radius: 1em;
 }
 
 @keyframes grow {

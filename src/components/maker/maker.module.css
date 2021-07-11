@@ -2,7 +2,7 @@
 @value mediaQuery from '../../common/size.css';
 
 .maker {
-  width: 100%;
+  width: 80rem;
   height: 100%;
   display: flex;
   background-color: makerLightWhite;
@@ -12,6 +12,7 @@
 .container {
   flex: 1;
   display: flex;
+  min-height: 0;
 }
 
 @media screen and (max-width: mediaQuery) {

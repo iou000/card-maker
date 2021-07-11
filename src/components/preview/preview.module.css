@@ -6,6 +6,7 @@
   padding: 1em 2em;
   flex-basis: 50%;
   background-color: makerLightWhite;
+  overflow-y: auto;
 }
 
 .title {
@@ -22,4 +23,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* 스크롤바*/
+.preview::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.preview::-webkit-scrollbar-thumb {
+  background-color: rgb(104, 180, 252);
+  border-radius: 1em;
 }
