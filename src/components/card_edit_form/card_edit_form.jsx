@@ -3,7 +3,7 @@ import styles from './card_edit_form.module.css';
 
 const CardEditForm = ({FileInput ,card, updateCard, deleteCard}) => {
         
-    const {id, name, company, job, email, tel, fileName, fileURL} = card;
+    const {name, fileName} = card;
 
     const onSubmit = (e) => {
         e.preventDefault();

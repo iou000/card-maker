@@ -49,7 +49,7 @@
   color: makerWhite;
   font-weight: bold;
   cursor: pointer;
-  padding: 0.5em;
+  padding: 0.5em 0;
   font-size: 0.8rem;
 }
 

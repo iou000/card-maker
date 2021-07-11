@@ -2,7 +2,7 @@
 @value makerLightWhite from '../../common/colors.css';
 
 .preview {
-  margin: 1em 0;
+  margin-top: 1em;
   padding: 1em 2em;
   flex-basis: 50%;
   background-color: makerLightWhite;
