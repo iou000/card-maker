@@ -22,7 +22,7 @@ const Login = ({authService}) => {
         authService.onAuthChange(user => {
             user && goToMaker(user.uid);
         })
-    },[]);
+    });
     
         
     return (

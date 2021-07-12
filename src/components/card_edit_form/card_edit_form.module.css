@@ -1,6 +1,7 @@
 @value makerBlue from '../../common/colors.css';
 @value makerWhite from '../../common/colors.css';
 @value makerBlack from '../../common/colors.css';
+@value makerInputBlue from '../../common/colors.css';
 
 .cardNum {
   width: 30rem;
@@ -37,6 +38,11 @@
   padding: 0.5em;
   border-bottom: 0.5px solid makerBlack;
   border-right: 0.5px solid makerBlack;
+}
+
+.input:focus {
+  outline: none;
+  background-color: makerInputBlue;
 }
 
 .image {

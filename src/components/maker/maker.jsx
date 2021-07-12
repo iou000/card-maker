@@ -31,7 +31,6 @@ const Maker = ({FileInput, authService, cardRepository}) => {
 
         const onLogout = () => {
             authService.logout();
-            history.push('/');
         }
 
 
@@ -41,7 +40,7 @@ const Maker = ({FileInput, authService, cardRepository}) => {
                 update[card.id] = card; //[card.id] == 해당 카드의 id == cards의 오브젝트 번호
                 return update;
             });
-            cardRepository.saveCard(userId,card);
+            cardRepository.saveCard(userId,card); //db에 카드정보저장
         }
 
         const deleteCard = (card) => {
@@ -50,18 +49,31 @@ const Maker = ({FileInput, authService, cardRepository}) => {
                 delete delCard[card.id];
                 return delCard;
             });
-            cardRepository.removeCard(userId,card);
+            cardRepository.removeCard(userId,card); //db에서 해당 카드정보 삭제
         }
-        
 
         useEffect(() => {
+            authService.onAuthChange(user => {
+                if (user) {
+                    setUserId(user.uid);
+                }
+                else {
+                    history.push('/');
+                }
+            })
+        },[authService, history])
+        
+
+        useEffect(() => { //maker컴포넌트가 마운트되면  userId의 cards를 받아옴
             if(!userId) {
                 return;
             }
-            cardRepository.syncCards(userId, cards => {
+            const stopSync = cardRepository.syncCards(userId, cards => {
                 setCards(cards);
             });
-        }, [userId]);
+            //컴포넌트가 언마운트 되었을 때 리턴한 함수 호출(리소스,메모리 등 정리)
+            return () => stopSync();
+        }, [userId, cardRepository]);
 
 
 
