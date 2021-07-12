@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import ReactDOM from 'react-dom';
 import './index.module.css';
 import App from './app';
@@ -11,9 +11,9 @@ const authService = new AuthService();
 const imageUploader = new ImageUploader();
 const cardRepository = new CardRepository();
 
-const FileInput = props => {  //Dependency Injection
+const FileInput = memo(props => {  //Dependency Injection
   return <ImageFileInput {...props} imageUploader={imageUploader} />;
-}
+});
 
 
 ReactDOM.render(
