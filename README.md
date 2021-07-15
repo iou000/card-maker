@@ -2,6 +2,8 @@
 
 react, firebase, cloudinary를 활욯한 명함만들기 프로젝트
 
+사이트 주소 : https://seop-card-maker.netlify.app/
+
 ## 실행 명령어
 
 yarn start
