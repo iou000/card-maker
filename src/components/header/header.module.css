@@ -13,6 +13,7 @@
   color: makerBlue;
   background-color: makerLightWhite;
   position: relative;
+  margin-top: 0.4em;
 }
 
 .logout {
